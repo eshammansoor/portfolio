@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bakery</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        background-color: black;
+        font-style: oblique;
+        color: white;
+    }
+    header{
+        background-color: rgb(216, 84, 172);
+        color: wheat;
+        padding: 15px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align:left;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h1,h2,h3,h4,h5{
+     text-align: center;
+        color: white;
+        background-color:  rgb(216, 84, 172);
+    }
+    img{
+        width: 700px;
+        height: 500px;
+        margin: 10px;
+        border-style: double;
+        border-color: rgb(231, 128, 154);
+        
+    }
+    div{
+        font-size: 40px;
+        color: white;
+    }
+    .logo{
+        height: 55px;
+        width: auto;
+        margin-right: 10px;
+        font-size: 50px;
+        color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav{
+        color: white;
+        padding: 10px;
+        text-align: right;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+      } 
+      nav ul li{
+        display:inline-block;
+        margin-left: 10px;
+        font-size:40px;
+       }
+       nav ul li:first-child{
+        margin-left: 0;
+       }
+       nav ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        transition: background-color 0.3s;  
+      }
+      nav ul li a:hover{
+         border-radius: 5px
+         }
+         button{
+            width: 100px;
+            height: 50px;
+        }
+        form{
+                display: inline-block;
+                text-align: right;
+             }
+             form input[type=text] {
+                padding: 8px;
+               margin-right: 5px;
+                border-radius:5px 0 0 5px;
+                border: 1px solid #ccc;
+                width: 300px;
+              }
+              form button{
+                padding: 8px 12px;
+                background-color: rgb(143, 36, 170);
+                color: azure;
+                border: none;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+                height: 50px;
+              }
+              form button:hover{
+                background-color: purple;
+              }  
+
+
+
+.content {
+    padding: 40px 20px;
+    background-color: rgba(214, 15, 78, 0);
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.content button{
+
+    padding: 8px 12px;
+                background-color: rgb(138, 74, 128);
+                color: azure;
+                border: none;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+                height: 50px;
+}
+    </style>
+<body>
+   <header>
+    <h1 class="logo"><b><i>SUGAR WHISK</i></b> </h1>
+    <nav>
+        <ul>
+            <li><a href="#Home">home</a></li>
+            <li><a href="#About">about</a></li>
+            <li><a href="#Services">services</a></li>
+            <li><a href="#Contact">contact</a></li>
+        </ul>
+       </nav>
+
+       <form action="/search"method="get">
+        <input type="text"placeholder="Enter your search term..">
+        <button type="submit"onclick="alert('DONE!')">Search</button>
+    </form>
+
+       </header>
+
+    <section id="Home" class="Welcome-section">
+        <div class="content">
+            <h2>HOME</h2>
+         <img src="bakery pic 2.jpg" alt="" srcset="">        
+             <p>Welcome to the <u><b>SUGAR WHISK</b></u>,where every bite tells a story of love, tradition, and the finest ingredients. Nestled in the heart of the community, our bakery is a haven for those who appreciate the comforting aroma of freshly baked bread, the delicate crunch of artisan pastries, and the sweet indulgence of handcrafted cakes. Whether you're stopping by for your morning coffee and a flaky croissant, ordering a custom cake for a special occasion, or simply treating yourself to a little sweetness, we’re here to make every moment delicious. At Sugar Whisk, we believe in baking with heart — using only the freshest ingredients, time-honored recipes, and a dash of creativity to bring you treats that taste just like home. Step inside, and let the warmth of our oven and our smiles make your day a little sweeter.</p>
+         </div>
+    </section>
+
+    <section id="About">
+        <div class="content">
+            <h2>ABOUT US</h2>
+           <img src="crossiant.avif" alt="" srcset="">
+            <p>we believe that baking is more than just a craft — it’s a way to share joy, comfort, and a little sweetness with the world. What started as a small dream in a cozy kitchen has grown into a beloved neighborhood bakery where every treat is made with love, care, and the finest ingredients. From our buttery croissants and soft breads to our decadent cakes and colorful cupcakes, everything is baked fresh daily with a focus on flavor, quality, and a sprinkle of creativity. We’re passionate about creating a space that feels like home — warm, welcoming, and filled with the irresistible aroma of fresh bakes. Whether you're here for your morning pastry or celebrating a special moment, we’re honored to be part of your story, one delicious bite at a time.</p>
+         </div>
+    </section>
+
+    <section id="Services">
+        <div class="content">
+            <h4>SERVICES</h4>
+             <img src="donut1.jpg" alt="" srcset="">
+             <img src="cupcake1.jpg" alt="" srcset="">
+             <img src="crossiant.avif" alt="" srcset="">
+             <p>we offer a wide variety of freshly baked goods and personalized services to make every day – and every occasion – a little sweeter. Here’s what we bring to the table:</p>
+             <ul>
+             <li>🧁 Fresh Daily Bakes
+             Enjoy a daily selection of breads, pastries, cookies, muffins, and cakes made with love and the finest ingredients.</li>
+             <li>🎂 Custom Cakes
+             Whether it's a birthday, wedding, baby shower, or any special event, we design and bake personalized cakes tailored to your theme and taste.</li>
+            <li>🛍️ Pre-Orders & Takeaway
+             Planning ahead? You can pre-order your favorite items for pickup — fresh, packed, and ready to go when you need them.</li>
+            <li>🎉 Event Catering
+             From dessert tables to brunch boxes, we offer catering for small parties, corporate events, and everything in between.</li>
+             <li>🍪 Diet-Friendly Options
+            We’ve got something for everyone! Ask us about our eggless, gluten-free, and vegan treats.</li>
+            <li>☕ Coffee & Quick Bites
+            Drop by and enjoy a cozy moment with our selection of hot beverages and ready-to-eat snacks.</li>
+         </ul>
+         <iframe width="660" height="315" src="https://www.youtube.com/embed/oCPElo_QJx4?si=Z3UQbEjACOa4GGTj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+    </section>
+
+    <section id="Contact" class="Welcome-section">
+        <div class="content">
+            <h5>CONTACT</h5>
+            <p>We’d love to hear from you! Whether you have a question, want to place an order, or just want to say hello — we’re here and happy to help. You can reach out to us through the details below or drop by the bakery to enjoy the smell of fresh bakes and a friendly smile.</p>
+            <ul>
+            <li>📍 Visit Us:
+            [Your Bakery Address]
+            [City, State, Zip Code]</li>
+            <li>📞 Call Us:
+            [Your Phone Number]</li>
+            <li>📧 Email Us:
+            [Your Email Address]</li>
+            <li>⏰ Opening Hours:
+            Monday – Saturday: 8 AM – 7 PM
+            Sunday: 9 AM – 3 PM</li>
+            </ul>
+            <br>
+            <p>If you want to order please fill the form:</p>
+            <button type="button">
+                <a href="form.html">Form</a>
+            </button>
+
+            
+            
+            
+             
+             
+    </section>
+    
+</body>
+</html>
