@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Haven</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    html {
+        scroll-padding-top: 100px;
+    }
+
+    body {
+        background-color: #1a120f;
+        color: #fff;
+    }
+
+    /* Header / Hero Section */
+    header {
+        height: 50vh;
+        background: url('coffee-shop-background-02x9a49rdcr5c18i.jpg') center/cover no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+    header::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+        font-size: 3rem;
+        z-index: 1;
+        position: relative;
+        color: #d4a373;
+    }
+
+    /* Navbar */
+    nav {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #d4a373;
+    }
+
+    /* About Section */
+    .about {
+        padding: 80px 10%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        background-color: #3e2a23;
+        margin-bottom: 60px;
+    }
+
+    .about img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 15px;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+    .about-text h2 {
+        color: #d4a373;
+        margin-bottom: 15px;
+    }
+
+    /* Menu Section */
+    .menu {
+        padding: 100px 10%;
+        text-align: center;
+        background-color: rgba(26, 18, 15, 0.95);
+    }
+
+    .menu h2 {
+        color: #d4a373;
+        margin-bottom: 30px;
+    }
+
+    .menu-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    .menu-item {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: left;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .menu-item div {
+        padding: 15px;
+    }
+
+    .menu-item h3 {
+        color: #d4a373;
+        margin-bottom: 8px;
+    }
+
+    .menu-item p {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .menu-item span {
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .menu-item:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 80px 10%;
+        background-color: rgba(19, 13, 11, 0.95);
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .contact h2 {
+        color: #d4a373;
+        margin-bottom: 20px;
+    }
+
+    /* Order Section */
+    .order {
+        padding: 80px 10%;
+        background-color: rgba(26, 18, 15, 0.95);
+        text-align: center;
+        color: #d4a373;
+    }
+    .order form {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        max-width: 400px;
+        margin: auto;
+    }
+    .order input, .order button {
+        padding: 12px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+    }
+    .order input {
+        background: #fff;
+        color: #000;
+    }
+    .order button {
+        background: #270c0c;
+        color: white;
+        cursor: pointer;
+    }
+    .order button:hover {
+        background: #a67c52;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .about {
+            flex-direction: column;
+            text-align: center;
+        }
+        nav ul {
+            flex-direction: column;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header id="home">
+    <h1>Coffee Haven</h1>
+</header>
+
+<!-- Navbar -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#order">Order Now</a></li>
+    </ul>
+</nav>
+
+<!-- About -->
+<section class="about" id="about">
+    <img src="about us.jpg" alt="">
+    <div class="about-text">
+        <h2>About Us</h2>
+        <p>We serve the finest coffee, brewed with love from ethically sourced beans. Whether you're here for your morning boost or a cozy evening, Coffee Haven is your perfect spot.</p>
+    </div>
+</section>
+
+<!-- Menu -->
+<section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="espresso.webp" alt="Espresso">
+            <div>
+                <h3>Espresso</h3>
+                <p>Strong and bold shot of pure coffee goodness.</p>
+                <span>$3.00</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="latte.avif" alt="Latte">
+            <div>
+                <h3>Latte</h3>
+                <p>Silky smooth steamed milk with a shot of espresso.</p>
+                <span>$4.50</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="-mocha.webp" alt="Mocha">
+            <div>
+                <h3>Mocha</h3>
+                <p>Chocolate meets coffee in this heavenly drink.</p>
+                <span>$5.00</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="capucino.webp" alt="Cappuccino">
+            <div>
+                <h3>Cappuccino</h3>
+                <p>Perfectly balanced coffee, milk, and foam.</p>
+                <span>$4.00</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="simple cpfe.jpg" alt="Simple Coffee">
+            <div>
+                <h3>Simple Coffee</h3>
+                <p>Classic brewed coffee, no frills — just flavor.</p>
+                <span>$2.00</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="download (1).webp" alt="Coffee with chocolate syrup and whipped cream">
+            <div>
+                <h3>Coffee with Chocolate Syrup & Whipped Cream</h3>
+                <p>Rich chocolate and cream topping over hot coffee.</p>
+                <span>$4.00</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Address: 123 Coffee Street, Brewtown</p>
+    <p>☎️ Phone: +123 456 7890</p>
+    <p>📧 Email: hello@coffeehaven.com</p>
+</section>
+
+<!-- Order Now -->
+<section class="order" id="order">
+    <h2>Order Now</h2>
+    <form id="orderForm">
+        <input type="text" placeholder="Your Order" required>
+        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Your Address" required>
+        <input type="tel" placeholder="Your Contact Number" required>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 Coffee Haven. All rights reserved.
+</footer>
+
+<script>
+// Minimal JS for order form
+document.getElementById("orderForm").addEventListener("submit", e => {
+    e.preventDefault();
+    alert("Your order is placed! ☕");
+});
+</script>
+
+</body>
+</html>
